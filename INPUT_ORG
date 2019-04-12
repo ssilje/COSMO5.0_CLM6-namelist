@@ -11,10 +11,10 @@
  /END
  &RUNCTL
   dt = 300,
-  hstart = 62112, hstop = 62784,
-  ydate_ini = '1979010100',
-  ydate_end = '2001010100',
-  nprocx = 4, nprocy = 16, nprocio = 0,
+  hstart = ${stahr}, hstop = ${endhr},
+  ydate_ini = '${startdate}',
+  ydate_end = '${enddate}',
+  nprocx = 8, nprocy = 12, nprocio = 0,
   nboundlines = 3, 
   itype_calendar = 0,
   hincmxt = 24, hincmxu = 24,
@@ -26,8 +26,15 @@
  /END
  &TUNING
   securi = 0.5,
-  tkhmin = 1.0,
+  tkhmin = 0.35,
   tkmmin = 1.0,
   mu_rain = 0.5,
   v0snow = 20.0,
+  rlam_heat = 0.5249,
+  entr_sc = 0.000186,
+  qi0 = 0.0,
+  uc1 = 0.0626,
+  fac_rootdp2 = 1.0,
+  radfac = 0.5,
+  soilhyd = 1.62,
  /END
